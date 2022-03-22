@@ -1,4 +1,7 @@
 
-<h2> Brand<%= @car.brand %></h2>
-<h2> Type<%= @car.type %></h2>
-<h2>Price<%= @car.price %></h2>
+<%= simple_form_for(car) do |f| %>
+  <%= f.input :brand %>
+  <%= f.input :type %>
+  <%= f.input :price %>
+  <%= f.submit %>
+<% end %>

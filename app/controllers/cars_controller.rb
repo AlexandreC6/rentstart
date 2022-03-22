@@ -5,7 +5,7 @@ class CarsController < ApplicationController
   end
 
   def create
-    @car = List.new(car_params)
+    @car = Car.new(car_params)
     if @car.save
       redirect_to car_path(@car)
     else
@@ -21,6 +21,9 @@ class CarsController < ApplicationController
   private
 
   def car_params
-    params.require(:list).permit(:brand, :type, :price)
+    params.require(:car).permit(:brand, :type, :price, :description)
+#     if params[:car]
+#       @members = @members.select { |member| member.start_with?(params[:member]) }
+#   end
   end
 end
