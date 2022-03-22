@@ -32,8 +32,6 @@ gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'simple_form', github: 'heartcombo/simple_form'
 
-gem 'simple_form', github: 'heartcombo/simple_form'
-
 # Authentification
 gem 'devise'
 
