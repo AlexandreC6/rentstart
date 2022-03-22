@@ -24,3 +24,4 @@ class CarsController < ApplicationController
     params.require(:car).permit(:brand, :type, :price, :description)
   end
 end
+FM
