@@ -1,0 +1,64 @@
+.banner {
+  background-size: contain;
+  background-position: center;
+  padding: 150px 0;
+  height: 200px;
+  width: 100%;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(243, 241, 241, 0.986);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 50px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(255, 252, 252, 0.959);
+}
+
+.avatar-large {
+  width: 56px;
+  border-radius: 50%;
+}
+
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+.search-form-control {
+  position: relative;
+}
+
+.search-form-control .btn {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 8px;
+}
+
+.search-form-control .form-control {
+  height: 3.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border: 1px solid #E7E7E7;
+}
+
+.search-form-control .form-control:focus {
+  border: 1px solid #1EDD88;
+  outline: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
