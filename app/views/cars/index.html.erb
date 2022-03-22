@@ -1,0 +1,10 @@
+<h1>INDEX</h1>
+<div class="cards">
+  <ul>
+    <% @cars.each do |car| %>
+      <div class="card-category">
+        <li><%= car.brand %></li>
+      </div>
+    <% end %>
+  </ul>
+</div>
