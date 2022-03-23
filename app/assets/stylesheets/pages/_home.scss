@@ -7,6 +7,27 @@
 
 body {
   font-size: 18px;
+
+  .brand h2 {
+    color: black;
+    margin-bottom: 22px;
+  }
+
+  .fuel p {
+    color: rgb(97, 97, 97);
+    font-weight: 100;
+    margin-bottom: 22px;
+  }
+
+  .price h4 {
+    color: rgb(66, 66, 66);
+    font-weight: 800;
+    margin-bottom: 14px;
+  }
+
+  .description p {
+    margin-bottom: 25px;
+  }
 }
 
 .all-page {

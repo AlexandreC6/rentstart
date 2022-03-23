@@ -1,17 +1,20 @@
 <div class="btn">
 <span class="btn-create"> <%= link_to "Create a card", new_car_path %> </span>
 </div>
+<body>
 <div class="cards">
   <ul>
     <% @cars.each do |car| %>
       <div class="card-product">
-        <%# <img src="https://picsum.photos/200/300?grayscale" /> %>
-        <img src="https://api.lorem.space/image/car?w=150&h=150" />
+        <img src="https://images.unsplash.com/photo-1561580125-028ee3bd62eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlc2xhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" />
         <div class="card-product-infos">
-          <h2><%= car.brand %></h2>
-          <p> <%= car.description %></p>
+         <span class="fuel"><p><%= car.fuel %></p></span>
+          <span class="brand"><h2><%= car.brand %></h2></span>
+          <span class="description"><p> <%= car.description %></p></span>
+           <span class="price"><h4><%= car.price %></h4></span>
         </div>
       </div>
     <% end %>
   </ul>
 </div>
+</body>
