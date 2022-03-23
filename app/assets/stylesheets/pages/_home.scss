@@ -5,27 +5,30 @@
   box-sizing: border-box;
 }
 
-body {
+.card-layout {
   font-size: 18px;
+  a {
+    text-decoration: none;
 
-  .brand h2 {
+  }
+  .brand {
     color: black;
     margin-bottom: 22px;
   }
 
-  .fuel p {
+  .fuel {
     color: rgb(97, 97, 97);
     font-weight: 100;
     margin-bottom: 22px;
   }
 
-  .price h4 {
+  .price {
     color: rgb(66, 66, 66);
     font-weight: 800;
     margin-bottom: 14px;
   }
 
-  .description p {
+  .description {
     margin-bottom: 25px;
   }
 }

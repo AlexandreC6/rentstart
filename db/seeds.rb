@@ -9,8 +9,8 @@ require 'faker'
 
 Car.delete_all
 
-Car.create!(brand: "Tesla", fuel: "Electrique", description: "blablabla", price: 850.-, user: User.last)
+Car.create!(brand: "Tesla", fuel: "Electrique", description: "Kilometrage illimité. Age minimum 19 ans. Boite automatique. 4 Portes. Consomation 18.1 kWh/100 km", price: 850, user: User.last)
 
-Car.create!(brand: "Toyota", fuel: "Hybrid", description: "Kilometrage illimité. Age minimum 19 ans. Boite automatique. 4 Portes. Émission de CO2: 105g/km", price: 670.-, user: User.last)
+Car.create!(brand: "Toyota", fuel: "Hybrid", description: "Kilometrage illimité. Age minimum 19 ans. Boite automatique. 4 Portes. Émission de CO2: 95g/km", price: 670, user: User.last)
 
-Car.create!(brand: "Porshe", fuel: "Diesel", description: "grand reservoir", price: 920.-, user: User.last)
+Car.create!(brand: "Porshe", fuel: "Diesel", description: "Kilometrage illimité. Age minimum 19 ans. Boite automatique. 4 Portes. Émission de CO2: 165g/km ", price: 920, user: User.last)
