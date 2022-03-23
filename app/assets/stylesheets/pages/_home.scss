@@ -34,10 +34,71 @@ body {
 .info {
   position: relative;
   top: 100px;
-  height: 50%;
+  height: 170px;
   width: 50%;
   color: white;
   border: 1px solid #93a2e4;
   background: #ffffff38;
   z-index: 9999;
+  margin-left: 32px;
+}
+
+.location-input {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  input {
+    width: 90%;
+    // background: #ffffff38;
+    opacity: 0.4;
+    border: none;
+    border-radius: 8px;
+  }
+}
+.date-input{
+display: flex;
+  justify-content: space-evenly ;
+  padding-top: 16px;
+  input {
+    opacity: 0.4;
+    border: none;
+    border-radius: 8px;
+  }
+}
+
+.btn-home {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.btn-all {
+  // background: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  // margin: 10px;
+  padding: 12px 28px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  a {
+    text-decoration: none ;
+    color: white;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+
+  &:hover {
+    // opacity: 1;
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
 }
