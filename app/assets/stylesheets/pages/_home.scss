@@ -5,8 +5,32 @@
   box-sizing: border-box;
 }
 
-body {
+.card-layout {
   font-size: 18px;
+  a {
+    text-decoration: none;
+
+  }
+  .brand {
+    color: black;
+    margin-bottom: 22px;
+  }
+
+  .fuel {
+    color: rgb(97, 97, 97);
+    font-weight: 100;
+    margin-bottom: 22px;
+  }
+
+  .price {
+    color: rgb(66, 66, 66);
+    font-weight: 800;
+    margin-bottom: 14px;
+  }
+
+  .description {
+    margin-bottom: 25px;
+  }
 }
 
 .all-page {
