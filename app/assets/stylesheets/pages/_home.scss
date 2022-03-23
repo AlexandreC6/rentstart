@@ -34,10 +34,58 @@ body {
 .info {
   position: relative;
   top: 100px;
-  height: 50%;
+  height: 170px;
   width: 50%;
   color: white;
   border: 1px solid #93a2e4;
   background: #ffffff38;
   z-index: 9999;
+  margin-left: 32px;
+}
+
+.location-input {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  input {
+    width: 90%;
+    // background: #ffffff38;
+    opacity: 0.4;
+    border: none;
+    border-radius: 8px;
+  }
+}
+.date-input{
+display: flex;
+  justify-content: space-evenly ;
+  padding-top: 16px;
+  input {
+    opacity: 0.4;
+    border: none;
+    border-radius: 8px;
+  }
+}
+
+.btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.btn-all {
+  padding: 8px 16px;
+  background-color: RGB(145, 170, 229);
+  opacity: 0.4;
+  a {
+    text-decoration: none ;
+    color: white;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
 }
