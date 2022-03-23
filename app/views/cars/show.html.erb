@@ -1,0 +1,12 @@
+<div class="banner">
+</div>
+<div class="container">
+  <h1><%= @car.brand %></h1>
+  <p><%= @car.fuel %> carburent</p>
+  <p><% @car.description%> this is the worst car you can ever have</p>
+  <p><strong>CHF <%= @car.price %></strong></p>
+
+  <div class="book-now">
+    <%= link_to "Booking", "#", class: "btn btn-primary" %>
+   </div>
+</div>
