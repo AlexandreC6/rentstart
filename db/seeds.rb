@@ -7,9 +7,10 @@ require 'faker'
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-puts "1"
 Car.delete_all
-puts "deleted."
-3.times do
-  Car.create!(brand: Faker::Lorem.word, fuel: Faker::Lorem.word, description: Faker::Lorem.sentence(word_count: 7), price: Faker::Number.decimal(l_digits: 2), user: User.last)
-end
+
+Car.create!(brand: "Tesla", fuel: "Electrique", description: "Kilometrage illimité. Age minimum 19 ans. Boite automatique. 4 Portes. Consomation 18.1 kWh/100 km", price: 850, user: User.last)
+
+Car.create!(brand: "Toyota", fuel: "Hybrid", description: "Kilometrage illimité. Age minimum 19 ans. Boite automatique. 4 Portes. Émission de CO2: 95g/km", price: 670, user: User.last)
+
+Car.create!(brand: "Porshe", fuel: "Diesel", description: "Kilometrage illimité. Age minimum 19 ans. Boite automatique. 4 Portes. Émission de CO2: 165g/km ", price: 920, user: User.last)

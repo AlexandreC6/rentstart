@@ -11,12 +11,6 @@ class CarsController < ApplicationController
 
   def new
     @car = Car.new
-
-  end
-
-  def destroy
-    @car.destroy
-    redirect_to cars_path
   end
 
   def create
