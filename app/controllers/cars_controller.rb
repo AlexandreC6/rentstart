@@ -1,9 +1,5 @@
 class CarsController < ApplicationController
-<<<<<<< my-feature
-  skip_before_action :authenticate_user!, only: [:show, :index, :new]
-=======
-  skip_before_action :authenticate_user!, only: [:show, :index, :create, :new]
->>>>>>> master
+  skip_before_action :authenticate_user!, only: [:show, :index, :new, :create]
 
   def index
     @cars = Car.all
@@ -11,10 +7,6 @@ class CarsController < ApplicationController
 
   def new
     @car = Car.new
-<<<<<<< my-feature
-=======
-
->>>>>>> master
   end
 
   def create
@@ -32,4 +24,3 @@ class CarsController < ApplicationController
     params.require(:car).permit(:brand, :fuel, :price, :description, :user_id)
   end
 end
-FM
