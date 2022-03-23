@@ -7,7 +7,9 @@ require 'faker'
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
+puts "1"
+Car.delete_all
+puts "deleted."
 3.times do
   Car.create!(brand: Faker::Lorem.word, fuel: Faker::Lorem.word, description: Faker::Lorem.sentence(word_count: 7), price: Faker::Number.decimal(l_digits: 2), user: User.last)
 end
