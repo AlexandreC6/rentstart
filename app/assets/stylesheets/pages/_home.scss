@@ -73,7 +73,8 @@ display: flex;
 }
 
 .btn-all {
-  background: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
+  // background: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
   // margin: 10px;
   padding: 12px 28px;
   text-align: center;
@@ -91,6 +92,7 @@ display: flex;
 
   p {
     margin-bottom: 0;
+    font-weight: 500;
   }
 
   &:hover {
