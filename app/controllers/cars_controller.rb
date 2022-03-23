@@ -1,5 +1,9 @@
 class CarsController < ApplicationController
+<<<<<<< my-feature
+  skip_before_action :authenticate_user!, only: [:show, :index, :new]
+=======
   skip_before_action :authenticate_user!, only: [:show, :index, :create, :new]
+>>>>>>> master
 
   def index
     @cars = Car.all
@@ -7,7 +11,10 @@ class CarsController < ApplicationController
 
   def new
     @car = Car.new
+<<<<<<< my-feature
+=======
 
+>>>>>>> master
   end
 
   def create
