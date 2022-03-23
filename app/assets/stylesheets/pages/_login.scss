@@ -1,0 +1,16 @@
+.form-all {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin-top: 100px;
+
+  .inside-form {
+    border: 1px solid black;
+    padding: 30px 60px;
+  }
+}
+
+.form-actions {
+  background-color: #8cc3ec;
+  font-weight: 600;
+}
