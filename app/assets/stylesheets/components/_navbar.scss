@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background-image: linear-gradient(135deg, RGB(139, 198, 235) 0%, RGB(147, 166, 229) 100%);
   color: black;
 }
 
@@ -13,9 +13,10 @@
 }
 
 #navbarSupportedContent{
-  a {
+  .nav-link {
+    color: white;
     &:hover {
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 8px;
     }
   }
@@ -24,3 +25,8 @@
 .navbar-nav {
   margin-right: 10px ;
 }
+
+// .dropdown-item {
+//   background-color: white;
+//   color: black;
+// }
