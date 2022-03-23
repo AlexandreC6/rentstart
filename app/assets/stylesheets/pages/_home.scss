@@ -73,9 +73,17 @@ display: flex;
 }
 
 .btn-all {
-  padding: 8px 16px;
-  background-color: RGB(145, 170, 229);
-  opacity: 0.4;
+  background: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
+  // margin: 10px;
+  padding: 12px 28px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
   a {
     text-decoration: none ;
     color: white;
@@ -86,6 +94,9 @@ display: flex;
   }
 
   &:hover {
-    opacity: 1;
+    // opacity: 1;
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
   }
 }
