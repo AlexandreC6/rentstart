@@ -35,6 +35,9 @@ gem 'simple_form', github: 'heartcombo/simple_form'
 # Authentification
 gem 'devise'
 
+#faker
+gem 'faker'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
