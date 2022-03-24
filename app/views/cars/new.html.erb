@@ -2,11 +2,12 @@
   <div class="row">
     <div class="col-12 col-md-6 offset-lg-3">
       <div class="bg-white rounded p-3 shadow">
-        <h1>Expresse your wishes</h1>
+        <h1>Ajouter votre annonce</h1>
         <%= simple_form_for(@car) do |f| %>
           <%= f.input :brand %>
           <%= f.input :fuel %>
           <%= f.input :price %>
+          <%= f.input :description %>
           <%= f.submit %>
         <% end %>
       <div>
