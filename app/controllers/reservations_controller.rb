@@ -6,10 +6,12 @@ class ReservationsController < ApplicationController
 
   def create
     @reservation = Reservation.new(reservation_params)
-    @car = Car.find(params[:reservation_id])
+    @car = Car.find(params[:car_id])
     @reservation.car = @car
+    @user = current_user.id
+    @reservation.user_id = @user
     if @reservation.save
-      redirect_to cars_path(@car)
+      redirect_to cars_path(@car_id)
     else
       render :new
     end
