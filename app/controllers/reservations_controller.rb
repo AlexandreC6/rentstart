@@ -1,4 +1,8 @@
 class ReservationsController < ApplicationController
+  def my_reservations
+    @reservation = Reservation.all
+  end
+  
   def new
     @car = Car.find(params[:car_id])
     @reservation = Reservation.new
@@ -23,4 +27,5 @@ class ReservationsController < ApplicationController
   def reservation_params
     params.require(:reservation).permit(:start_date, :end_date)
   end
+
 end
