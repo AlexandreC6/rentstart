@@ -43,6 +43,10 @@
 
 .card-product-infos {
 
+  p {
+    color: #5b605b;
+  }
+
   h2 {
     padding-bottom: 16px;
     text-transform: uppercase;
@@ -56,7 +60,7 @@
 }
 
 .card-product h2 {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
 }
@@ -65,7 +69,7 @@
   font-size: 12px;
   line-height: 1.4;
   opacity: .7;
-  margin-bottom: 0;
+  margin-bottom: 34px;
   margin-top: 8px;
 }
 
