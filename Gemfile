@@ -38,6 +38,9 @@ gem 'devise'
 #faker
 gem 'faker'
 
+#cloudinary
+gem 'dotenv-rails', groups: [:development, :test]
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
