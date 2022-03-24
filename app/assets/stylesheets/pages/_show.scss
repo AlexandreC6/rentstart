@@ -1,0 +1,25 @@
+#featurette {
+  margin: 100px 30px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  align-items: center;
+
+  .info-price-btn {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  }
+
+  .price-car {
+    font-weight: bolder;
+    margin-bottom: 8px ;
+  }
+
+  #colonne-img {
+    padding-left: 0;
+  }
+}
