@@ -1,12 +1,15 @@
 <div class="banner">
 </div>
 <div class="container">
+<img src="https://images.unsplash.com/photo-1561580125-028ee3bd62eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlc2xhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+  style= " "/>
   <h1><%= @car.brand %></h1>
-  <p><%= @car.fuel %> carburent</p>
-  <p><% @car.description%> this is the worst car you can ever have</p>
-  <p><strong>CHF <%= @car.price %></strong></p>
-
-  <div class="book-now">
-    <%= link_to "Booking", "#", class: "btn btn-primary" %>
-   </div>
+  <p><%= @car.description %></p>
+  <p><%= @car.fuel %> </p>
+  <%# <div class="book-now " style="width: -200px; margin-top: 100px" > %>
+  <div class="d-flex justify-content-end mb-4">
+    <span style="margin-right: 20px"> <p><strong><%= @car.price %> CHF</strong></p></span>
+      <%= link_to "Booking", "#", class: "btn btn-primary" %>
+  </div>
+  <%# </div> %>
 </div>
