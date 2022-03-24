@@ -13,4 +13,4 @@ Car.create!(brand: "Tesla", fuel: "Electrique", description: "Kilometrage illimi
 
 Car.create!(brand: "Toyota", fuel: "Hybrid", description: "Kilometrage illimité. Age minimum 19 ans. Boite automatique. 4 Portes. Émission de CO2: 95g/km", price: 670, user: User.last)
 
-Car.create!(brand: "Porshe", fuel: "Diesel", description: "Kilometrage illimité. Age minimum 19 ans. Boite automatique. 4 Portes. Émission de CO2: 165g/km ", price: 920, user: User.last)
+Car.create!(brand: "Porcshe", fuel: "Diesel", description: "Kilometrage illimité. Age minimum 19 ans. Boite automatique. 4 Portes. Émission de CO2: 165g/km ", price: 920, user: User.last)
