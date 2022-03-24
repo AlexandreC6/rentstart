@@ -1,0 +1,13 @@
+<h1>new reservation</h1>
+
+<div class="calendar">
+  <%= simple_form_for [ @car, @reservation ] do |f| %>
+  <div class="ligne-1">
+    <%= f.input :start_date %>
+  </div>
+  <div class="ligne-2">
+    <%= f.input :end_date %>
+    <%= f.submit "Submit reservation", class: "btn btn-primary" %>
+  <% end %>
+  </div>
+</div>
