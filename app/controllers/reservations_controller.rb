@@ -15,7 +15,7 @@ class ReservationsController < ApplicationController
     @user = current_user.id
     @reservation.user_id = @user
     if @reservation.save
-      raise
+      # raise
       redirect_to car_path(params[:car_id])
     else
       render :new
