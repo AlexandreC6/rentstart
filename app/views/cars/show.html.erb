@@ -22,8 +22,7 @@
     <p class="lead"><%= @car.description %></p>
     <div class="info-price-btn">
       <p class="price-car"><%= @car.price %> CHF </p>
-      <p><%= link_to "Book now", "#", class: "btn btn-primary" %></p>
+      <p><%= link_to "Book now", new_car_reservation_path(@car), class: "btn btn-primary" %></p>
     </div>
-
   </div>
 </div>
