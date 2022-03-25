@@ -1,1 +1,18 @@
-<%= @reservation.first %>
+<div class="cards card-layout">
+  <ul>
+    <% @reservation.each do |reservation| %>
+      <a href="reservation/<%= reservation.id %>">
+        <div class="card-product">
+          <img src="https://images.unsplash.com/photo-1561580125-028ee3bd62eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlc2xhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" />
+          <div class="card-product-infos">
+          <div class="car_id"><p><%= reservation.car_id %></p></div>
+          <div class="usre_id"><h2><%= reservation.user_id %></h2></div>
+          <div class="strat_date"><p> <%= reservation.start_date %></p></div>
+          <h4 class="end_date"><%= reservation.end_date %> <strong></strong></h4>
+          </div>
+        </div>
+      </a>
+      <p> <%= link_to "Edit", new_car_path %> |  <%= link_to "Delete", :confirm => "Are you sure?", :method => :delete %> </p>
+    <% end %>
+  </ul>
+</div>
