@@ -16,12 +16,16 @@ class ReservationsController < ApplicationController
     @reservation.user_id = @user
     if @reservation.save
       # raise
-      redirect_to car_path(params[:car_id])
+      redirect_to my_reservations_path
     else
       render :new
     end
   end
 
+  def destroy
+    @reservation = Reservation.find(params[:id])
+    @reservation.destroy
+    redirect_to '/reservations/my_reservations', :notice => "Your reservation has been deleted"
   def edit
     @reservation = Reservation.find(params[:id])
   end
@@ -29,6 +33,6 @@ class ReservationsController < ApplicationController
   private
 
   def reservation_params
-    params.require(:reservation).permit(:start_date, :end_date)
+    params.require(:reservation).permit(:start_date, :end_date, :car_id, :user_id)
   end
 end
