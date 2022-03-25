@@ -26,6 +26,8 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.find(params[:id])
     @reservation.destroy
     redirect_to '/reservations/my_reservations', :notice => "Your reservation has been deleted"
+
+  end
   def edit
     @reservation = Reservation.find(params[:id])
   end
