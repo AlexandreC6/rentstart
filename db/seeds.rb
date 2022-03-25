@@ -7,6 +7,7 @@ require 'faker'
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Reservation.delete_all
 Car.delete_all
 
 Car.create!(brand: "Tesla", fuel: "Electrique", description: "Kilometrage illimité. Age minimum 19 ans. Boite automatique. 4 Portes. Consomation 18.1 kWh/100 km", price: 850, user: User.last)
