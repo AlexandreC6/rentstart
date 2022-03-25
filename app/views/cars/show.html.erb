@@ -1,7 +1,7 @@
 <div class="row featurette" id="featurette">
   <div class="col-md-5 meme" id="colonne-img">
-    <%# <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: auto;" src="https://images.unsplash.com/photo-1561580125-028ee3bd62eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlc2xhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=6" data-holder-rendered="true"> %>
-    <%= cl_image_tag @car.photo.key, height: 300, width: 400, crop: :fill %>
+    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: auto;" src="https://images.unsplash.com/photo-1561580125-028ee3bd62eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlc2xhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=6" data-holder-rendered="true">
+    <%# <%= cl_image_tag @car.photo.key, height: 300, width: 400, crop: :fill %>
   </div>
   <div class="col-md-7">
     <h2 class="featurette-heading"><%= @car.brand %></h2>
