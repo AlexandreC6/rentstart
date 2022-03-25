@@ -2,7 +2,7 @@ class ReservationsController < ApplicationController
   def my_reservations
     @reservation = Reservation.all
   end
-
+  
   def new
     @car = Car.find(params[:car_id])
     @reservation = Reservation.new
@@ -15,7 +15,6 @@ class ReservationsController < ApplicationController
     @user = current_user.id
     @reservation.user_id = @user
     if @reservation.save
-      # raise
       redirect_to car_path(params[:car_id])
     else
       render :new
