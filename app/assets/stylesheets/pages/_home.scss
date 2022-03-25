@@ -57,7 +57,7 @@
 
 .info {
   position: relative;
-  left: 300px;
+  left: 351px;
   top: 100px;
   height: 170px;
   width: 50%;
@@ -73,17 +73,19 @@
   justify-content: center;
   padding-top: 16px;
   input {
-    width: 90%;
+    // width: 90%;
     // background: #ffffff38;
     opacity: 0.4;
     border: none;
     border-radius: 8px;
+    width: 699px;
   }
 }
 .date-input{
-display: flex;
+  display: flex;
   justify-content: space-evenly ;
   padding-top: 16px;
+
   input {
     opacity: 0.4;
     border: none;
