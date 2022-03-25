@@ -1,20 +1,20 @@
 class ReservationsController < ApplicationController
   def my_reservations
-    @reservations = Reservation.all
+    @reservation = Reservation.all
   end
 
   def new
     @car = Car.find(params[:car_id])
-    @reservations = Reservation.new
+    @reservation = Reservation.new
   end
 
   def create
-    @reservations = Reservation.new(reservation_params)
+    @reservation = Reservation.new(reservation_params)
     @car = Car.find(params[:car_id])
-    @reservations.car = @car
+    @reservation.car = @car
     @user = current_user.id
-    @reservations.user_id = @user
-    if @reservations.save
+    @reservation.user_id = @user
+    if @reservation.save
       # raise
       redirect_to car_path(params[:car_id])
     else
@@ -25,7 +25,7 @@ class ReservationsController < ApplicationController
   private
 
   def reservation_params
-    params.require(:reservations).permit(:start_date, :end_date)
+    params.require(:reservation).permit(:start_date, :end_date)
   end
 
 end
