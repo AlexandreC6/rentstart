@@ -5,8 +5,8 @@ class Car < ApplicationRecord
 
   include PgSearch::Model
   pg_search_scope :search_by_brand,
-    against: [ :brand, :fuel ],
+    against: [ :brand ],
     using: {
-      tsearch: { prefix: true } # <-- now `superman batm` will return something!
+      tsearch: { prefix: true }
     }
 end
