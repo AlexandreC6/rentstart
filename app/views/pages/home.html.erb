@@ -1,17 +1,17 @@
 <div class="all-page">
   <h1>Rentstart</h1>
   <div class="info">
-    <div class="location-input">
-      <input type="text" placeholder="Location ..">
-    </div>
-    <div class="date-input">
-      <input type="date">
-      <input type="date">
-    </div>
+  <div class="location-input">
+    <%= form_tag cars_path, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Find a car"
+      %>
+  </div>
     <div class="btn-home">
-      <button class="btn-all">
-        <p> <%= link_to "Rechercher", cars_path %> </p>
-      </button>
+      <%= submit_tag "Search", class: "btn-all" %>
+      <% end %>
     </div>
   </div>
   <div class="fond-wave">
