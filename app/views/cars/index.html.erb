@@ -9,6 +9,7 @@
       <a href="<%= car_path(car.id) %>">
         <div class="card-product">
           <img src="https://images.unsplash.com/photo-1561580125-028ee3bd62eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlc2xhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" />
+          <%# <img <%= cl_image_tag @car.photo.key, height: 300, width: 400, crop: :fill %>> %>
           <div class="card-product-infos">
           <div class="fuel"><p><%= car.fuel %></p></div>
           <div class="brand"><h2><%= car.brand %></h2></div>

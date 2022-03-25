@@ -1,10 +1,20 @@
 .calendar {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 16px;
   grid-row-gap: 0px;
-  }
+}
 
-  .ligne-1 { grid-area: 1 / 1 / 2 / 4; }
-  .ligne-2 { grid-area: 2 / 1 / 3 / 4; }
+.new-reservation {
+  display: flex;
+  justify-content: center;
+}
+
+#btn-submit {
+display: flex;
+}
+
+
+.ligne-1 { grid-area: 1 / 1 / 2 / 4; }
+.ligne-2 { grid-area: 2 / 1 / 3 / 4; }
