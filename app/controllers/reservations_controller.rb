@@ -2,7 +2,7 @@ class ReservationsController < ApplicationController
   def my_reservations
     @reservation = Reservation.all
   end
-  
+
   def new
     @car = Car.find(params[:car_id])
     @reservation = Reservation.new
@@ -20,6 +20,10 @@ class ReservationsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def edit
+    @reservation = Reservation.find(params[:id])
   end
 
   private
